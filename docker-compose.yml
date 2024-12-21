@@ -1,0 +1,36 @@
+services:
+    app:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        container_name: python_app
+        # * Comment this line if you want to run the app without a Vector Store
+        # depends_on:
+        #   - qdrant
+        env_file:
+            - .env
+        ports:
+            - "8000:8000"
+        # volumes:
+        #   - ./storage:/app/storage
+
+    # qdrant:
+    #     image: qdrant/qdrant:latest
+    #     restart: always
+    #     container_name: qdrant
+    #     ports:
+    #         - 6333:6333
+    #         - 6334:6334
+    #     expose:
+    #         - 6333
+    #         - 6334
+    #         - 6335
+    #     volumes:
+    #         - ./qdrant_storage:/qdrant/storage
+    #     environment:
+    #         QDRANT__SERVICE__API_KEY: "TEST"
+
+configs:
+    qdrant_config:
+        content: |
+            log_level: INFO

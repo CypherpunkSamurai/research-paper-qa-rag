@@ -1,0 +1,41 @@
+httpx
+python-dotenv
+
+# * RAG API
+llama-index
+llama-index-readers-file
+
+# * Vector Stores
+# vector stores for faiss (local vector stores)
+# llama-index-vector-stores-faiss
+# vector stores for qdrant (vector stores)
+# llama-index-vector-stores-qdrant
+# vector stores for pinecone (vector stores)
+llama-index-vector-stores-pinecone
+# vector stores for milvus (vector stores. install milvus-lite (ubuntu and mac only) for local storage instead of server)
+# pymilvus
+# llama-index-vector-stores-milvus
+
+# * Embeddings Generator Models
+# fastembed for embeddings generator model
+llama-index-embeddings-fastembed
+# atlas.nomic.ai
+# llama-index-embeddings-nomic
+# embeddings for together.ai
+# llama-index-embeddings-together
+# embeddings for voyageai.com
+# llama-index-embeddings-voyageai
+
+# * Language Models
+# llm for openrouter
+# llama-index-llms-openrouter
+# llm for groq
+llama-index-llms-groq
+# llm for ollama (local inference)
+# llama-index-llms-ollama
+# llm for openai
+# llama-index-llms-openai
+# llm for gemini
+# llama-index-llms-gemini
+# llm for openrouter
+# llama-index-llms-openrouter
